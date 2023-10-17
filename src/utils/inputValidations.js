@@ -6,6 +6,10 @@
 |  🐸 Returns:  -
 *-------------------------------------------------------------------*/
 
+
+
+
+
 export const name_validation = {
   name: 'name',
   label: 'name',
@@ -33,7 +37,7 @@ export const city_validation = {
   validation: {
     required: {
       value: true,
-      message: 'required',
+      message: 'city required',
     },
     maxLength: {
       value: 30,
@@ -51,7 +55,25 @@ export const state_validation = {
   validation: {
     required: {
       value: true,
-      message: 'required',
+      message: 'state required',
+    },
+    maxLength: {
+      value: 30,
+      message: '30 characters max',
+    },
+  },
+}
+
+export const country_validation = {
+  name: 'country',
+  label: 'country',
+  type: 'text',
+  id: 'country',
+  placeholder: 'write your country ...',
+  validation: {
+    required: {
+      value: true,
+      message: 'country required',
     },
     maxLength: {
       value: 30,

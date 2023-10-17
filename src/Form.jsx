@@ -15,11 +15,17 @@ import {
   num_validation,
   password_validation,
   city_validation,
-  state_validation
+  state_validation,
+  country_validation
 } from './utils/inputValidations'
 import { useState } from 'react'
 import { GrMail } from 'react-icons/gr'
 import { BsFillCheckSquareFill } from 'react-icons/bs'
+
+
+
+
+
 
 export const Form = () => {
   const methods = useForm()
@@ -46,7 +52,9 @@ export const Form = () => {
           <Input {...password_validation} />
           <Input {...city_validation} />
           <Input {...state_validation} />
+          <Input {...country_validation}  />
           <Input {...desc_validation} className="md:col-span-2" />
+          
           
         </div>
         <div className="mt-5">
