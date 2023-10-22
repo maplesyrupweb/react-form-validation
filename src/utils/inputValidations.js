@@ -117,6 +117,11 @@ export const password_validation = {
       value: 8,
       message: 'min 8 characters',
     },
+    pattern: {
+      value:
+      /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).*$/,
+      message: '1 uppercase, 1 lowercase, 1 number',
+    },
   },
 }
 
