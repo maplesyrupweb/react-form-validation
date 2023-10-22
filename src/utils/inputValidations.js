@@ -114,22 +114,30 @@ export const password_validation = {
       message: 'required',
     },
     minLength: {
-      value: 6,
-      message: 'min 6 characters',
+      value: 8,
+      message: 'min 8 characters',
     },
   },
 }
 
-export const num_validation = {
-  name: 'num',
-  label: 'number',
-  type: 'number',
-  id: 'num',
-  placeholder: 'write a random number',
+export const phone_number_validation = {
+  name: 'phone_number',
+  label: 'phone number',
+  type: 'phone_number',
+  id: 'phone_number',
+  placeholder: 'phone number',
   validation: {
     required: {
       value: true,
-      message: 'required',
+      message: 'phone number required',
+    },
+    minLength: {
+      value: 10,
+      message: 'min 10 characters'
+    },
+    maxLength: {
+      value: 14,
+      message: 'max 14 characters',
     },
   },
 }
@@ -152,3 +160,6 @@ export const email_validation = {
     },
   },
 }
+
+
+//add a dropdown validation

@@ -12,7 +12,7 @@ import {
   name_validation,
   desc_validation,
   email_validation,
-  num_validation,
+  phone_number_validation,
   password_validation,
   city_validation,
   state_validation,
@@ -48,7 +48,7 @@ export const Form = () => {
         <div className="grid gap-5 md:grid-cols-2">
           <Input {...name_validation} />
           <Input {...email_validation} />
-          <Input {...num_validation} />
+          <Input {...phone_number_validation} />
           <Input {...password_validation} />
           <Input {...city_validation} />
           <Input {...state_validation} />
