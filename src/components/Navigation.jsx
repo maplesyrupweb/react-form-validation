@@ -11,9 +11,9 @@ import { BsEnvelope, BsGithub, BsLinkedin, BsTwitter, BsFillTelephoneFill } from
 
 export const Navigation = () => {
   return (
-    <div className="border-b bg-slate-100">
+    <div className="border-b bg-blue-800 text-white">
       <nav className="container flex justify-between items-center">
-        <div className="font-semibold">React Forms</div>
+        <div className="font-semibold">Hotel booking</div>
         <div className="flex items-center gap-4 text-lg">
           <a href="https://github.com/" target="_blank">
             <BsGithub />

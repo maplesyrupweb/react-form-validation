@@ -148,16 +148,59 @@ export const phone_number_validation = {
   },
 }
 
-export const date_validation = {
-  name: 'date',
-  label: 'dater',
+export const start_date_validation = {
+  name: 'start_date',
+  label: 'start date',
   type: 'date',
-  id: 'date',
-  placeholder: 'date',
+  id: 'start_date',
+  placeholder: 'start date',
   validation: {
     required: {
       value: true,
-      message: 'date required',
+      message: 'start date required',
+    } 
+  }
+}
+
+export const end_date_validation = {
+  name: 'end_date',
+  label: 'end date',
+  type: 'date',
+  id: 'end_date',
+  placeholder: 'end date',
+  validation: {
+    required: {
+      value: true,
+      message: 'end date required',
+    } 
+  }
+}
+
+
+export const number_adults_validation = {
+  name: 'number_adult',
+  label: 'adult(s)',
+  type: 'number',
+  id: 'adult_number',
+  placeholder: '0',
+  validation: {
+    required: {
+      value: true,
+      message: 'number required',
+    } 
+  }
+}
+
+export const number_children_validation = {
+  name: 'number_children',
+  label: 'children',
+  type: 'number',
+  id: 'number_children',
+  placeholder: '0',
+  validation: {
+    required: {
+      value: true,
+      message: 'number required',
     } 
   }
 }
