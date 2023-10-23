@@ -10,21 +10,18 @@ import { Input } from './components'
 import { FormProvider, useForm } from 'react-hook-form'
 import {
   name_validation,
-  desc_validation,
+  message_validation,
   email_validation,
   phone_number_validation,
   password_validation,
   city_validation,
   state_validation,
-  country_validation
+  country_validation,
+  date_validation
 } from './utils/inputValidations'
 import { useState } from 'react'
 import { GrMail } from 'react-icons/gr'
 import { BsFillCheckSquareFill } from 'react-icons/bs'
-
-
-
-
 
 
 export const Form = () => {
@@ -53,7 +50,9 @@ export const Form = () => {
           <Input {...city_validation} />
           <Input {...state_validation} />
           <Input {...country_validation}  />
-          <Input {...desc_validation} className="md:col-span-2" />
+          
+          <Input {...date_validation}  />
+          <Input {...message_validation} className="md:col-span-2" />
           
           
         </div>

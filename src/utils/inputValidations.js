@@ -15,7 +15,7 @@ export const name_validation = {
   label: 'name',
   type: 'text',
   id: 'name',
-  placeholder: 'write your name ...',
+  placeholder: 'Full name',
   validation: {
     required: {
       value: true,
@@ -33,7 +33,7 @@ export const city_validation = {
   label: 'city',
   type: 'text',
   id: 'city',
-  placeholder: 'write your city ...',
+  placeholder: 'City',
   validation: {
     required: {
       value: true,
@@ -51,11 +51,11 @@ export const state_validation = {
   label: 'state',
   type: 'text',
   id: 'state',
-  placeholder: 'write your state/province ...',
+  placeholder: 'state/province',
   validation: {
     required: {
       value: true,
-      message: 'state required',
+      message: 'state/province',
     },
     maxLength: {
       value: 30,
@@ -69,7 +69,7 @@ export const country_validation = {
   label: 'country',
   type: 'text',
   id: 'country',
-  placeholder: 'write your country ...',
+  placeholder: 'country',
   validation: {
     required: {
       value: true,
@@ -84,12 +84,12 @@ export const country_validation = {
 
 
 
-export const desc_validation = {
-  name: 'description',
-  label: 'description',
+export const message_validation = {
+  name: 'message',
+  label: 'message',
   multiline: true,
-  id: 'description',
-  placeholder: 'write description ...',
+  id: 'message',
+  placeholder: 'message',
   validation: {
     required: {
       value: true,
@@ -102,12 +102,13 @@ export const desc_validation = {
   },
 }
 
+// 8 characters, 1 uppercase, 1 lowercase, 1 number
 export const password_validation = {
   name: 'password',
   label: 'password',
   type: 'password',
   id: 'password',
-  placeholder: 'type password ...',
+  placeholder: 'password',
   validation: {
     required: {
       value: true,
@@ -147,12 +148,28 @@ export const phone_number_validation = {
   },
 }
 
+export const date_validation = {
+  name: 'date',
+  label: 'dater',
+  type: 'date',
+  id: 'date',
+  placeholder: 'date',
+  validation: {
+    required: {
+      value: true,
+      message: 'date required',
+    } 
+  }
+}
+
+
+
 export const email_validation = {
   name: 'email',
-  label: 'email address',
+  label: 'email',
   type: 'email',
   id: 'email',
-  placeholder: 'write a random email address',
+  placeholder: 'email',
   validation: {
     required: {
       value: true,
