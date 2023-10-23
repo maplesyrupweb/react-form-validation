@@ -17,7 +17,10 @@ import {
   city_validation,
   state_validation,
   country_validation,
-  date_validation
+  start_date_validation,
+  end_date_validation,
+  number_adults_validation,
+  number_children_validation
 } from './utils/inputValidations'
 import { useState } from 'react'
 import { GrMail } from 'react-icons/gr'
@@ -48,14 +51,23 @@ export const Form = () => {
           <Input {...phone_number_validation} />
           <Input {...password_validation} />
           <Input {...city_validation} />
-          <Input {...state_validation} />
-          <Input {...country_validation}  />
+          <Input {...state_validation} />    
           
-          <Input {...date_validation}  />
-          <Input {...message_validation} className="md:col-span-2" />
+          
           
           
         </div>
+        <div className="mt-10 grid gap-5 md:grid-cols-4">
+          <Input {...start_date_validation}  />
+          <Input {...end_date_validation}  />
+          <Input {...number_adults_validation}  />
+          <Input {...number_children_validation}  />
+        </div>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
+          <Input {...message_validation} className="md:col-span-2" />
+        </div>
+
         <div className="mt-5">
           {success && (
             <p className="font-semibold text-green-500 mb-5 flex items-center gap-1">
@@ -64,7 +76,7 @@ export const Form = () => {
           )}
           <button
             onClick={onSubmit}
-            className="p-5 rounded-md bg-blue-600 font-semibold text-white flex items-center gap-1 hover:bg-blue-800"
+            className="p-5 rounded-md bg-blue-800 font-semibold text-white flex items-center gap-1 hover:bg-blue-400"
           >
             <GrMail />
             Submit Form
