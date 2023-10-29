@@ -20,7 +20,10 @@ import {
   start_date_validation,
   end_date_validation,
   number_adults_validation,
-  number_children_validation
+  number_children_validation,
+  credit_card_validation,
+  credit_card_expiry_validation,
+  credit_card_CVV_validation
 } from './utils/inputValidations'
 import { useState } from 'react'
 import { GrMail } from 'react-icons/gr'
@@ -52,11 +55,8 @@ export const Form = () => {
           <Input {...password_validation} />
           <Input {...city_validation} />
           <Input {...state_validation} />    
-          
-          
-          
-          
         </div>
+
         <div className="mt-10 grid gap-5 md:grid-cols-4">
           <Input {...start_date_validation}  />
           <Input {...end_date_validation}  />
@@ -65,9 +65,21 @@ export const Form = () => {
         </div>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">
+          <Input {...credit_card_validation} className="md:col-span-2" />
+          
+        </div>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <Input {...credit_card_expiry_validation}   />
+          <Input {...credit_card_CVV_validation}   />
+        </div>
+
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
           <Input {...message_validation} className="md:col-span-2" />
         </div>
 
+        
         <div className="mt-5">
           {success && (
             <p className="font-semibold text-green-500 mb-5 flex items-center gap-1">

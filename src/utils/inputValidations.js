@@ -92,8 +92,7 @@ export const message_validation = {
   placeholder: 'message',
   validation: {
     required: {
-      value: true,
-      message: 'required',
+      value: false,
     },
     maxLength: {
       value: 200,
@@ -131,7 +130,7 @@ export const phone_number_validation = {
   label: 'phone number',
   type: 'phone_number',
   id: 'phone_number',
-  placeholder: 'phone number',
+  placeholder: '1112223333',
   validation: {
     required: {
       value: true,
@@ -212,7 +211,7 @@ export const email_validation = {
   label: 'email',
   type: 'email',
   id: 'email',
-  placeholder: 'email',
+  placeholder: 'jon@gmail.com',
   validation: {
     required: {
       value: true,
@@ -223,6 +222,72 @@ export const email_validation = {
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
       message: 'not valid',
     },
+  },
+}
+
+export const credit_card_validation = {
+  name: 'credit_card',
+  label: 'Credit card',
+  type: 'text',
+  id: 'credit_card',
+  placeholder: '1234567890123456',
+  validation: {
+    required: {
+      value: true,
+      message: 'required',
+    },
+    maxLength: {
+      value: 16,
+      message: '16 characters max',
+    },
+    minLength: {
+      value: 16,
+      message: '16 characters min',
+    },
+  },
+}
+
+export const credit_card_expiry_validation = {
+  name: 'credit_card_expirty',
+  label: 'Expiry date',
+  type: 'text',
+  id: 'credit_card_expirty',
+  placeholder: '1127',
+  validation: {
+    required: {
+      value: true,
+      message: 'required',
+    },
+    maxLength: {
+      value: 4,
+      message: '4 characters max',
+    },
+    minLength: {
+      value: 4,
+      message: '4 characters min',
+    },
+  },
+}
+
+export const credit_card_CVV_validation = {
+  name: 'credit_card_CVV',
+  label: 'CVV',
+  type: 'password',
+  id: 'credit_card_CVV',
+  placeholder: '123',
+  validation: {
+    required: {
+      value: true,
+      message: 'required',
+    },
+    minLength: {
+      value: 3,
+      message: '3 characters min',
+    },
+    maxLength: {
+      value: 4,
+      message: '4 characters max',
+    },    
   },
 }
 
