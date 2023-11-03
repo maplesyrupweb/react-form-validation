@@ -11,7 +11,7 @@
 
 ## References
 
-[React](https://react.dev/)
-[Tailwind CSS classes](https://tailwind.build/classes)
-[Free Code Camp](https://www.freecodecamp.org/news/how-to-validate-forms-in-react/)
-[Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [Tailwind CSS classes](https://tailwind.build/classes)
+- [Free Code Camp](https://www.freecodecamp.org/news/how-to-validate-forms-in-react/)
+- [Vite](https://vitejs.dev/)
